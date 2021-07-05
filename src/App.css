@@ -1,38 +1,415 @@
-.App {
-  text-align: center;
+.header {
+    background-color: rgba(0, 47, 52, .03);
+    height: 75px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.location-input {
+    width: 240px;
+    height: 50px;
+    margin-left: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.location-input-2 {
+    width: 440px;
+    height: 50px;
+    margin-left: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-img {
+    width: 30px;
+    height: 20px;
+    border: 5px solid red;
 }
 
-.App-link {
-  color: #61dafb;
+.header .ttt .col-lg-10 {
+    margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .ttt .col-lg-2 {
+    margin-top: 20px;
+    margin-right: 0px;
+}
+
+.navbar-sa-necha {
+    background-image: url(https://statics.olx.com.pk/external/base/img/hero_bg_pk.jpg);
+    height: 252px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    /* position: absolute; */
+    /* top: 112px; */
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin-bottom: -220px;
+}
+
+.navbar-sa-necha img{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sections-box {
+    margin-top: 280px;
+}
+
+.back-cover {
+    background-color: #ebeeef;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.for-based {
+    font-size: 24px;
+    margin: 0 0 16px;
+    color: #002f34;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.for-based .view-more {
+    color: #002f34;
+    border-bottom: 2px solid #002f34;
+    padding: 0;
+    font-size: 16px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.for-based .view-more:hover {
+    border-bottom: none;
+}
+
+
+/* _________________ */
+
+.best-services h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+    color: #244d8b;
+    margin-bottom: 17px;
+}
+
+.best-services h1 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.services .services-box p {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 350;
+}
+
+.services .services-box h4 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+
+.services .services-box {
+    transition: 0.2s;
+    /* box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1); */
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.services .services-box:hover {
+    transition: 0.2s;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.services .services-box img {
+    margin-top: 12px;
+    width: 220px;
+}
+
+.services .services-box label {
+    position: absolute;
+    top: 35px;
+    left: 24px;
+    text-transform: uppercase;
+    padding: 0px 0px 0px 19px;
+    background-color: #ffce32;
+    color: #002f34;
+    font-size: 10px;
+}
+
+.services .services-box label .feature {
+    font-size: 10px;
+    margin-right: 15px;
+    font-weight: bolder;
+}
+
+.vl {
+    border-left: 3px solid green;
+    height: 85px;
+    position: absolute;
+    right: 94%;
+    top: 66.5%;
+    border-radius: 100px;
+}
+
+
+/* _____________________________ */
+
+@media (min-width: 768px) {
+    .ten-columns>.col-sm-2 {
+        width: 20%;
+    }
+}
+
+.footer .heading {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    flex-basis: 20%;
+}
+
+.footer .links {
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: #002f34;
+    color: rgba(0, 47, 52, .64);
+    margin-bottom: 40px;
+}
+
+.footer img {
+    margin-top: -95px;
+}
+
+.bottom {
+    color: #fff;
+    line-height: 18px;
+    background: #002f34;
+}
+
+.bottom a {
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.bottom a:hover {
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.bottom .first,
+.last {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 17px;
+}
+
+.bottom .last {
+    text-align: right;
+}
+
+.vla {
+    border-left: 2px solid rgb(194, 194, 194);
+    height: 140px;
+    position: absolute;
+    margin-right: 220px;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.get-your-app-today {
+    margin-left: 95px;
+    margin-top: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.try-the-olx-app h3 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.try-the-olx-app p {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+/* <!__________________FOR CATOGRY_______________!> */
+
+.categories .categories-dropdown {
+    text-align: center;
+    font-size: 15px;
+    border: none;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: #002f34;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    font-family: 'Roboto', sans-serif;
+}
+
+.categories .categories-line a {
+    font-size: 14px;
+    margin-left: 20px;
+    color: #01434a;
+    outline: none;
+    text-transform: capitalize;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+.categories {
+    margin-top: 6px;
+}
+
+.categories .categories-line a:hover {
+    margin-left: 20px;
+    color: #00bdd2;
+    outline: none;
+    text-decoration: none;
+}
+
+.after-login-icon .messanger-icon {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #002f34;
+    cursor: pointer;
+}
+
+.after-login-icon .notification-icon {
+    font-size: 24px;
+    color: #002f34;
+    cursor: pointer;
+}
+
+.after-login-icon .dropdown-icon {
+    font-size: 24px;
+    color: #002f34;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:600px) {
+    /* .after-login-icon {
+        display: none;
+    } */
+    .location-input-2 {
+        display: none;
+    }
+    .location-input {
+        display: none;
+    }
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 50px;
+}
+
+
+/* !_____________sell page__________! */
+
+.form-up .image-sell {
+    background-color: #fff;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.back-colour {
+    background-color: #01434a;
+    color: white;
+}
+
+.form-group {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#emailHelp {
+    color: white;
+    font-size: 15px;
+}
+
+.sell-style {
+    margin-top: 5px;
+    border-radius: 250px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 7px 10px -7px rgba(0, 0, 0, .5);
+    border-color: #23e5db #3a77ff #ffce32;
+    border-style: solid;
+    border-width: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 15px 10px 15px;
+}
+
+
+/* ____________________________ */
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
 }
